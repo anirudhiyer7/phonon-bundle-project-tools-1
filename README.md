@@ -20,26 +20,35 @@ Reproduces the coherent dynamics presented in the reference work by simulating t
 
 Results include:
 
-* (P_{0,v}) and (P_{2,c}) populations for the 2-phonon bundle system.
-* (P_{0,v}) and (P_{3,c}) populations for the 3-phonon bundle system.
+* P_0v and P_2c populations for the 2-phonon bundle system.
+* P_0v and P_3c populations for the 3-phonon bundle system.
+
+<p align="center">
+  <img src="images/Rabi_Oscillation_weak_coupling.png" width="370">
+  <img src="images/gRabi_Oscillation_3_weakc.png" width="380">
+</p>
 
 These simulations demonstrate the expected Rabi oscillations in the absence of dissipation.
 
 ### Steady-State Correlation Functions
 
-Computes the steady-state second-order correlation function (g^{(2)}(0)) for different bundle sizes.
+Computes the steady-state second-order correlation function g^2(0) for different bundle sizes.
 
-Results are shown for:
-
-* (n = 2)
-* (n = 3)
-* (n = 4)
+Results are shown for: n=2,3,4
+<p align="center">
+  <img src="images/g2plot_nequals2.png" width="370">
+  <img src="images/g2plot_nequals3&4.png" width="380">
+</p>
 
 and reproduce the behaviour reported in the reference paper.
 
 ### Lindblad Master Equation Implementation
 
-Contains a scratch implementation of the Lindblad master equation for a five-emitter system.
+Contains a scratch implementation of the Lindblad master equation for a five-emitter system. It uses the Liouvillian superoperator and superket method for faster computation of steady state [2].
+
+<p align="center">
+  <img src="images/5emitter_g2diss.png" width="400">
+</p>
 
 Features:
 
@@ -48,7 +57,7 @@ Features:
 * Calculation of second-order correlation functions.
 * Time evolution over 2000 timesteps.
 
-This implementation served as an initial verification of the dissipative dynamics required for subsequent stages of the project.
+This implementation served as an initial verification of the dissipative dynamics required for subsequent stages of the project and as an exploration of the physics behind the modelled system.
 
 ## References
 
