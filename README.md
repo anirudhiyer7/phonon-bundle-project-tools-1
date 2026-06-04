@@ -25,7 +25,7 @@ Results include:
 
 <p align="center">
   <img src="images/Rabi_Oscillation_weak_coupling.png" width="370">
-  <img src="images/gRabi_Oscillation_3_weakc.png" width="380">
+  <img src="images/Rabi_Oscillation_3_weakc.png" width="370">
 </p>
 
 These simulations demonstrate the expected Rabi oscillations in the absence of dissipation.
